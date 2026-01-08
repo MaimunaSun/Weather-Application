@@ -1,10 +1,26 @@
-# Weather-Application
-This project involves designing and developing a weather application that uses temperature, humidity, and pressure data retrieved from a Web API via the libcurl library. The solution is structured into three main subsections:
+# Weather Application
 
-1. Data Retrieval: This section is responsible for fetching data from the Web API. By utilizing the libcurl library, the application retrieves up-to-date weather information including temperature, humidity, and pressure.
+This is a **desktop weather application** built with **C++/CLI** and **Windows Forms**. It retrieves live weather data from a Web API using **libcurl** and presents it in a **user-friendly GUI**.
 
-2. Data Processing: In this subsection, the retrieved data is processed and formatted. This involves filtering, organizing, and preparing the data to ensure it is accurate and ready for visualization.
+## Features
+- Live weather data retrieval: Temperature, Humidity, Pressure
+- Derived calculations: Dew point, Rain likelihood, Weather comfort
+- Predictions for next hour and weather cycle
+- Visual GUI built with Windows Forms
 
-3. Data Visualization: The final subsection focuses on presenting the processed data in a user-friendly manner. The weather information is visualized to provide clear and useful insights to the user, making it easy to understand the current weather conditions.
+## Technologies
+- C++/CLI
+- libcurl
+- Windows Forms
+- Standard C++ Libraries
 
-By dividing the application into these distinct subsections, the project ensures a clear and efficient workflow from data retrieval to visualization.
+## How It Works
+
+1. **Data Retrieval**:  
+   The `Client` class fetches weather data from the Web API using libcurl.
+
+2. **Data Processing**:  
+   The raw data is split and converted into usable formats (temperature, humidity, pressure, dew point, etc.).
+
+3. **Data Visualization**:  
+   The `Home` Windows Form displays the current weather, predictions, and insights.
